@@ -10,7 +10,7 @@ std::string get_middle(std::string input){
 
 	//check to see if length is odd or even
 	if (str_len % 2 == 0){
-		out_str = input.substr(str_len/2.0-1, str_len/2.0);
+		out_str = input.substr(str_len/2-1, 2);
 	} else {
 		out_str = input.at(str_len/2);
 	}
