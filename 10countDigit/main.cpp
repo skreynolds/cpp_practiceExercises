@@ -6,13 +6,13 @@
 #include "main.hpp"
 
 int main(void){
-	CountDig x;
-	x.nbDig(5,2);
 
-	int i = 1;
-	std::string j = std::to_string(i);
+	//initiate the test
+	CountDig test1;
+	int test1_out = test1.nbDig(5750,0);
 
-	std::cout<<"The int is: "<<i<<"the string is: "<<j<<"\n";
+	//view the output
+	std::cout<<test1_out<<std::endl;
 
 	return 0;
 }

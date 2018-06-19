@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <iostream>
 #include <string>
 
@@ -8,12 +9,15 @@ public:
 
 int CountDig::nbDig(int n, int d){
 
-	const int size = n+1;
-	std::string arr[size];
+	char dChar = '0' + d;
+	int count = 0;
 
 	for (int i = 0; i < n+1; i++){
-		arr[i] = std::to_string(i*i);
+
+		std::string temp_string = std::to_string(i*i);
+		size_t k = std::count(temp_string.begin(), temp_string.end(), dChar);
+		count += k;
 	}
 
-	return 0;
+	return count;
 }
