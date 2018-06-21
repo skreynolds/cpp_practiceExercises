@@ -16,12 +16,14 @@
 int main(void){
 
 
-	std::vector<int> test_vect1;
-	int test_arr1[5] = {1, 3, 5, 9, 11};
-	test_vect1.assign(test_arr1, test_arr1+5);
-	int result1 = 7;
+	std::vector<long> test_vect1;
+	long test_arr1[5] = {-8, -9, -11};
+	test_vect1.assign(test_arr1, test_arr1+3);
+	float result1 = -10;
 
-	int out1 = findMissing(test_vect1);
+	float out1 = findMissing(test_vect1);
+
+	std::cout<<out1<<std::endl;
 
 	if (out1 == result1){
 		std::cout<<"Test Passed.";
