@@ -6,10 +6,14 @@ class Robot{
 	private:
 		data_type speed;
 	public:
+		// Important first function:
+		// the constructor
 		Robot(data_type speed_in);
 		data_type GetSpeed();
 };
 
+// This is the constructor function
+// specification
 template<class data_type>
 Robot<data_type>::Robot(data_type speed_in){
 	speed = speed_in;
